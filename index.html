@@ -7,7 +7,7 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scrollbar-width:thin;scrollbar-color:#475569 rgba(15,23,42,.3)}
-body{font-family:'Microsoft YaHei','PingFang SC','Helvetica Neue',system-ui,sans-serif;background:#0a0a0f;background-image:url('配图.png');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat;color:#e2e8f0;line-height:1.7;-webkit-font-smoothing:antialiased;overflow:hidden;height:100vh}
+body{font-family:'Microsoft YaHei','PingFang SC','Helvetica Neue',system-ui,sans-serif;background:#0a0a0f;background-image:url('pattern_bg.png');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat;color:#e2e8f0;line-height:1.7;-webkit-font-smoothing:antialiased;overflow:hidden;height:100vh}
 ::selection{background:rgba(239,68,68,.2)}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
@@ -73,14 +73,14 @@ nav .lk a.act{color:#ef4444;background:rgba(239,68,68,.1);font-weight:600}
 
 /* ====== PAGES ====== */
 #pageContainer{position:fixed;top:64px;left:0;right:0;bottom:0;overflow:hidden}
-.page{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;opacity:0;pointer-events:none;scroll-behavior:smooth;background-image:url('配图.png');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat}
+.page{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;opacity:0;pointer-events:none;scroll-behavior:smooth;background-image:url('pattern_bg.png');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat}
 .page.active{opacity:1;pointer-events:auto}
 .page::-webkit-scrollbar{width:4px}
 .page::-webkit-scrollbar-track{background:transparent}
 .page::-webkit-scrollbar-thumb{background:#475569;border-radius:4px}
 
 /* ====== HERO ====== */
-.hero-page{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:100%;background-image:url('背景.png')!important}
+.hero-page{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:100%;background-image:url('hero_bg.png')!important}
 .hero-page .overlay{position:absolute;inset:0;background:rgba(0,0,0,.1)}
 .hero-page .gr{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 75% 65% at 50% 50%,#000 20%,transparent 70%)}
 .hero-page .cm{position:absolute;width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(239,68,68,.3),transparent);top:12%;left:-10%;transform:rotate(-25deg);animation:comet 9s linear infinite}
@@ -543,7 +543,7 @@ footer p{opacity:.7}
   .fab button{width:32px;height:32px;font-size:12px}
 }
 </style>
-<link rel="preload" as="image" href="配图.png">
+<link rel="preload" as="image" href="pattern_bg.png">
 </head>
 <body>
 
@@ -566,11 +566,11 @@ footer p{opacity:.7}
 
 <!-- ====== DESK PET ====== -->
 <div class="desk-pet" id="deskPet" style="right:60px;bottom:40px;width:80px;height:135px;left:auto">
-  <img src="桌宠_透明底.png" alt="桌宠" id="petImg">
+  <img src="pet.png" alt="桌宠" id="petImg">
 </div>
 
 <!-- ====== MUSIC ====== -->
-<audio id="bgMusic" src="比赛音乐.mp3" loop preload="auto"></audio>
+<audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
 <div class="music-player" id="musicPlayer" style="right:40px;top:40px;left:auto" title="🎵 校园歌曲">🎵</div>
 
 <!-- ====== GALLERY LIGHTBOX ====== -->
@@ -587,7 +587,7 @@ footer p{opacity:.7}
   <div class="lo-orb"></div>
   <div class="lo-particles" id="loParticles"></div>
   <div class="lo-emblem" id="loEmblem">
-    <img src="校徽新.png" alt="曹妃甸职业技术学院校徽" class="lo-badge-img">
+    <img src="badge.png" alt="曹妃甸职业技术学院校徽" class="lo-badge-img">
     <div class="lo-ring-outer"></div>
     <div class="lo-ring-inner"></div>
   </div>
